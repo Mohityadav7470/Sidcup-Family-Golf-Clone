@@ -35,3 +35,9 @@ function saveData(){
 (function() {
     listContainer.innerHTML = localStorage.getItem("data");
 }())
+
+task.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      addTask();
+    }
+});
